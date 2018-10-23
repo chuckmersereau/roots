@@ -1,6 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { Location } from "@angular/common";
 
+const LINKS: any = [
+  { name: "Home", view: "/home", selected: false },
+  { name: "Prayer Requests", view: '/prayerrequests', selected: false },
+  { name: "Office", view: "/office", selected: false},
+  { name: "Field Ministry", view: '/fieldministry', selected: false },
+  { name: "Prayer Letters", view: '/prayerletters', selected: false },
+]
+
 @Component({
   selector: 'nav-bar',
   templateUrl: './navigation.component.html',
@@ -14,10 +22,7 @@ export class NavigationComponent implements OnInit {
     private location: Location
   ) {
 
-    this.links= [
-      { name: "Home", view: "/home", selected: false },
-      { name: "Field Ministry", view: '/fieldministry', selected: false }
-    ];
+    this.links = LINKS;
     this.location.go(this.location.path());
     this.changeSelected(this.location.path());
    }
