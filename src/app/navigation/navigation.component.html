@@ -1,10 +1,10 @@
 <div>
   <ul class="nav-bar">
-    <li>
-      <a routerLink="/home">Home</a>
-    </li>
-    <li>
-      <a routerLink="/fieldministry">Field Ministry</a>
+    <li *ngFor="let link of links"
+      [class.selected]="link.selected"
+      routerLink={{link.view}}
+      (click)="changeSelected(link.view)">
+      {{link.name}}
     </li>
   </ul>
 </div>

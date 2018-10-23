@@ -11,11 +11,19 @@
 li {
   width: 10%;
   text-align: center;
+  outline: none;
+  font-size: 1.2em;
 }
 
-a {
-  margin: auto;
-  font-size: 1.2em;
-  text-decoration: none;
-  color: black;
+li:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+
+li:active {
+  background-color: darkgray;
+}
+
+.selected {
+  background-color: darkgray;
 }
