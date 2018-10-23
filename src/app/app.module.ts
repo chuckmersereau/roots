@@ -6,13 +6,19 @@ import { RoutingModule } from './/routing.module';
 import { HomeComponent } from './home/home.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { FieldMinistryComponent } from './field-ministry/field-ministry.component';
+import { PrayerLettersComponent } from './prayer-letters/prayer-letters.component';
+import { OfficeComponent } from './office/office.component';
+import { PrayerRequestsComponent } from './prayer-requests/prayer-requests.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavigationComponent,
-    FieldMinistryComponent
+    FieldMinistryComponent,
+    PrayerLettersComponent,
+    OfficeComponent,
+    PrayerRequestsComponent
   ],
   imports: [
     BrowserModule,
