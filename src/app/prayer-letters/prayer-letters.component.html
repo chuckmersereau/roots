@@ -1,3 +1,15 @@
-<p>
-  prayer-letters works!
-</p>
+<div class="menu-letters">
+  <div class="letter-list">
+    <ul>
+      <li *ngFor="let letter of letters" (click)="showLetter(letter)">
+        {{letter.name}}
+      </li>
+    </ul>
+  </div>
+  <div class="letter">
+    <embed
+      src="asssets/September_2018.pdf"
+      width="100%"
+      style="margin-left:auto;margin-right:auto">
+  </div>
+</div>
