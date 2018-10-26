@@ -10,8 +10,20 @@ export class PrayerLettersComponent implements OnInit {
   letter: any;
   constructor() {
     this.letters = [
-      { name: 'September 2018', view:'assets/September_2018.pdf' },
-      { name: 'August 2018', view: 'assets/August_2018.pdf' }
+      {
+        name: 'September 2018',
+        link:"https://drive.google.com/open?id=1zhWn652yC78Cy-aEqAXfcyIEDlKYyrWe",
+        view:[
+          'assets/September_2018-page1.jpg',
+          'assets/September_2018-page2.jpg'
+        ]},
+      {
+        name: 'August 2018',
+        link: "https://drive.google.com/open?id=10F3upGPyMPNFYePAsAw-1LV1DgeH604J",
+        view: [
+          'assets/August_2018-page1.jpg',
+          'assets/August_2018-page2.jpg'
+      ]}
     ]
     this.letter = this.letters[0];
    }
