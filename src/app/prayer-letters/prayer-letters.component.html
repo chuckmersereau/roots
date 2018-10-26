@@ -1,3 +1,14 @@
-<p>
-  prayer-letters works!
-</p>
+<div class="menu-letters">
+  <div class="letter-list">
+    <ul>
+      <li *ngFor="let letter of letters" (click)="showLetter(letter)">
+        {{letter.name}}
+      </li>
+    </ul>
+  </div>
+  <div class="letter">
+    <a href={{letter.link}}>
+      <img *ngFor="let img of letter.view" src={{img}}>
+    </a>
+  </div>
+</div>
