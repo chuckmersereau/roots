@@ -1,11 +1,8 @@
 .banner {
   margin-left:auto;
   margin-right:auto;
-  padding-bottom: 3em;
-}
-
-.logo {
   padding-top: 2em;
+  padding-bottom: 3em;
 }
 
 .logo h1 {
@@ -24,4 +21,13 @@
 
 .img img {
   width: 100%;
+}
+
+.view-title {
+  font-size: 2em;
+  text-align: center;
+}
+
+.view-title h1 {
+  font-weight: lighter;
 }

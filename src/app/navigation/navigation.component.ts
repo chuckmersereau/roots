@@ -37,6 +37,7 @@ export class NavigationComponent implements OnInit {
     for(let link of this.links) {
       if( link.view == view ) {
         link.selected = true;
+        view = link.name;
       } else {
         link.selected = false;
       }

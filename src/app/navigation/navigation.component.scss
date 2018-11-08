@@ -25,8 +25,8 @@
 }
 
 .nav a {
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: .6em;
+  padding-right: .6em;
   margin-bottom: auto;
   text-align: center;
   outline: none;
@@ -43,5 +43,5 @@ a:hover {
 }
 
 .selected {
-  border-bottom: solid green;
+  border-bottom: solid 2px green;
 }
