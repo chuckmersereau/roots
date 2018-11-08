@@ -1,32 +1,47 @@
-
-.nav-bar {
-  padding: 0;
-  margin: 0;
-  margin-bottom: 1em;
-  list-style: none;
+.navbar {
   display: flex;
-  background-color: lightgray;
-  line-height: 2em;
 }
 
-li {
-  padding-left: 1em;
-  padding-right: 1em;
-  text-align: center;
-  outline: none;
-  font-size: 1.2em;
+.nav-home {
+  width: 3em;
 }
 
-li:hover {
-  background-color: gray;
+.nav-home img {
+  width: 100%;
+}
+
+.nav-home img:hover {
   cursor: pointer;
 }
 
-li:active {
-  background-color: darkgray;
+.nav {
+  flex:none;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  list-style: none;
+  display: flex;
+  font-size: .8em;
+}
+
+.nav a {
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-bottom: auto;
+  text-align: center;
+  outline: none;
+  font-size: 1.2em;
+  text-decoration: none;
+  color:black;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.nav a:active {
 }
 
 .selected {
-  // background-color: darkgray;
   border-bottom: solid green;
 }

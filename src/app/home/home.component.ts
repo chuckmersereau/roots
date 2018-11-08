@@ -3,13 +3,13 @@ import { Component, OnInit } from '@angular/core';
 
 const WELCOME: any = [
   "Welcome to Roots, the ministry page of Chuck Mersereau.",
-  
-  "This website was created so that ministry partners and those \
-  interested could find information about what the Lord has been \
-  doing through me as a full-time missionary as well as interact with \
-  me and other members of my ministry team. Here you can find details \
-  of my job as a computer programmer, stories of what's happening in \
-  field ministry, look at past prayer letters, and more!",
+
+  "This website was created so that ministry partners and others \
+  could find out what the Lord has been \
+  doing through me as a full-time missionary. You can interact with \
+  me and other members of my ministry team through prayer requests, \
+  find details of my job as a computer programmer, read stories from \
+  field ministry, view past prayer letters, and more!",
 
   "I have chosen the name \"Roots\" because me and my ministry partners \
   share much in common with a tree and it\'s roots. While only a certain \

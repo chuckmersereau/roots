@@ -9,6 +9,7 @@ import { FieldMinistryComponent } from './field-ministry/field-ministry.componen
 import { PrayerLettersComponent } from './prayer-letters/prayer-letters.component';
 import { OfficeComponent } from './office/office.component';
 import { PrayerRequestsComponent } from './prayer-requests/prayer-requests.component';
+import { BannerComponent } from './banner/banner.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PrayerRequestsComponent } from './prayer-requests/prayer-requests.compo
     FieldMinistryComponent,
     PrayerLettersComponent,
     OfficeComponent,
-    PrayerRequestsComponent
+    PrayerRequestsComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,

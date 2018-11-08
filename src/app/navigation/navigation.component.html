@@ -1,10 +1,16 @@
-<div>
-  <ul class="nav-bar">
-    <li *ngFor="let link of links"
-      [class.selected]="link.selected"
+<div class="navbar">
+  <div *ngIf="view != '/home'" class="nav-home">
+    <a routerLink="/home" (click)="changeSelected(link.view)">
+      <img src="assets/roots-holder.png">
+    </a>
+  </div>
+  <div class="nav">
+    <a *ngFor="let link of links"
       routerLink={{link.view}}
+      [class.selected]="link.selected"
       (click)="changeSelected(link.view)">
       {{link.name}}
-    </li>
-  </ul>
+    </a>
+  </div>
 </div>
+<banner [view]="view"></banner>
