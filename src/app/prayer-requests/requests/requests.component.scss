@@ -1,3 +1,24 @@
+.verses {
+  display: flex;
+  padding: 2em;
+}
+.verses div {
+  padding: 1em;
+  width: 50%;
+}
+
+.verses {
+  font-style: italic;
+}
+
+.verses h2 {
+  font-weight: normal;
+}
+
+.verses p {
+  font-weight: lighter;
+}
+
 .submit button {
   font-size: 1.1em;
   color:white;
@@ -12,4 +33,25 @@
   cursor: pointer;
   color: black;
   background-color: white;
+}
+
+.request-list {
+  padding: 1em 0;
+}
+
+.request {
+  display: flex;
+  padding: .5em 0;
+  border-top: solid 1px lightgray;
+}
+
+.request-info, .request-info-anonymous {
+  background-color: #f2f2f2;
+  padding: 1em;
+  width: 20%;
+}
+
+.request-text {
+  width: 80%;
+  padding: 1em;
 }

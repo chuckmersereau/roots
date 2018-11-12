@@ -1,4 +1,27 @@
+<div class="verses">
+  <div *ngFor="let verse of verses">
+    <h2>{{verse.reference}}</h2>
+    <p>{{verse.text}}</p>
+  </div>
+</div>
 <div class="submit">
   <button routerLink="./submit">Submit Prayer Request
   </button>
+</div>
+<div class='request-list'>
+  <div class='request' *ngFor="let request of requests">
+    <div class='request-info' *ngIf="!request.anonymous">
+      <p>{{request.name}}</p>
+      <p>{{request.school}}</p>
+      <p>{{request.state}}</p>
+      <p>{{request.date}}</p>
+    </div>
+    <div class="request-info-anonymous" *ngIf="request.anonymous">
+      <p>Anonymous<p>
+      <p>{{request.date}}</p>
+    </div>
+    <div class='request-text'>
+      <p>{{request.request}}</p>
+    </div>
+  </div>
 </div>
