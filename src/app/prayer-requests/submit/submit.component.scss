@@ -1,0 +1,22 @@
+.nav {
+  width: 640px;
+  height: 1em;
+}
+
+.nav a {
+  float: right;
+  font-size: 1em;
+  text-decoration: none;
+  color:black;
+  padding-right: .4em;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.submit {
+  width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}

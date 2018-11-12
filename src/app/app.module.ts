@@ -8,7 +8,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { FieldMinistryComponent } from './field-ministry/field-ministry.component';
 import { PrayerLettersComponent } from './prayer-letters/prayer-letters.component';
 import { OfficeComponent } from './office/office.component';
-import { PrayerRequestsComponent } from './prayer-requests/prayer-requests.component';
+import { PrayerRequestsModule } from './prayer-requests/prayer-requests.module';
 import { BannerComponent } from './banner/banner.component';
 
 @NgModule({
@@ -19,12 +19,12 @@ import { BannerComponent } from './banner/banner.component';
     FieldMinistryComponent,
     PrayerLettersComponent,
     OfficeComponent,
-    PrayerRequestsComponent,
     BannerComponent
   ],
   imports: [
     BrowserModule,
-    RoutingModule
+    PrayerRequestsModule,
+    RoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
