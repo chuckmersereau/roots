@@ -3,7 +3,7 @@
   // transition-duration: 1s;
 }
 
-.menu-letters {
+.letter-tray {
   display: flex;
   width: 100%;
   margin:0;
@@ -44,6 +44,11 @@
   float: right;
   padding-right: .5em;
   margin: auto;
+}
+
+.year-year {
+  cursor: pointer;
+  overflow: hidden;
 }
 
 .months {

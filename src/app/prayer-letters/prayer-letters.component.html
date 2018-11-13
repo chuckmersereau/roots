@@ -1,8 +1,8 @@
-<div class="menu-letters">
+<div class="letter-tray">
   <div class="letter-list">
     <ul>
       <li *ngFor="let year of years" class="year">
-        <div (click)="showYear(year)" [class.selected]="year.selected">
+        <div (click)="showYear(year)" class="year-year" [class.selected]="year.selected">
           {{year.year}}
           <i class="fas fa-angle-up" [ngClass]="{ 'fa-flip-vertical': year.show }"></i>
         </div>
