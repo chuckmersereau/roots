@@ -1,3 +1,8 @@
+* {
+  // transition: max-height 1s;
+  // transition-duration: 1s;
+}
+
 .menu-letters {
   display: flex;
   width: 100%;
@@ -9,7 +14,7 @@
   width: 20%;
   background-color: gray;
   color: white;
-  height: 15em;
+  height: 30em;
   padding: 0;
   padding-bottom: 0;
 }
@@ -20,13 +25,39 @@
   padding: .8em;
   margin: 0;
   list-style: none;
-  // overflow-y:scroll;
 }
 
 .letter-list ul li {
   line-height: 1.5em;
   cursor: pointer;
   overflow-x:scroll;
+}
+
+.year {
+  // border-bottom: solid 1px silver;
+  padding-bottom: .25em;
+  align-items: center;
+}
+
+.year i {
+  transition-duration: .5s;
+  float: right;
+  padding-right: .5em;
+  margin: auto;
+}
+
+.months {
+  height: 0;
+  overflow: hidden;
+  padding-left: .75em;
+}
+
+.show {
+  height: inherit;
+}
+
+.selected {
+  font-weight: 600;
 }
 
 .letter {

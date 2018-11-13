@@ -1,8 +1,18 @@
 <div class="menu-letters">
   <div class="letter-list">
     <ul>
-      <li *ngFor="let letter of letters" (click)="showLetter(letter)">
-        {{letter.name}}
+      <li *ngFor="let year of years" class="year">
+        <div (click)="showYear(year)" [class.selected]="year.selected">
+          {{year.year}}
+          <i class="fas fa-angle-up" [ngClass]="{ 'fa-flip-vertical': year.show }"></i>
+        </div>
+        <div *ngFor="let letter of letters" class="months" [ngClass]="{'show' : year.show}">
+          <li *ngIf="letter.year == year.year"
+              (click)="showLetter(letter)"
+              [class.selected]="letter.selected">
+            {{ letter.date | date: 'MMMM' }}
+          </li>
+        </div>
       </li>
     </ul>
   </div>
