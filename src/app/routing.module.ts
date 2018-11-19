@@ -10,16 +10,11 @@ import { RequestsComponent } from './prayer-requests/requests/requests.component
 
 const routes: Routes = [
   {
-    path: '',
-    redirectTo: '/home',
-    pathMatch: 'full' },
-  {
-    path: 'home',
-    component: HomeComponent
-  },
-  {
     path: 'prayerrequests',
     component: PrayerRequestsComponent,
+    data: {
+      title: "Prayer Requests"
+    },
     children: [
       {
         path: '',
@@ -33,15 +28,33 @@ const routes: Routes = [
   },
   {
     path: 'office',
-    component: OfficeComponent
+    component: OfficeComponent,
+    data: {
+      title: "Office"
+    },
   },
   {
     path: 'fieldministry',
-    component: FieldMinistryComponent
+    component: FieldMinistryComponent,
+    data: {
+      title: "Field Ministry"
+    },
   },
   { path: 'prayerletters',
     component: PrayerLettersComponent,
+    data: {
+      title: "Prayer Letters"
+    },
   },
+  {
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
+  },
+  {
+    path: 'home',
+    component: HomeComponent,
+  }
 ];
 
 @NgModule({

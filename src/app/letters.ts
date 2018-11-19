@@ -16,7 +16,8 @@ export const LETTERS = [
     view: [
       'https://drive.google.com/uc?id=1K-iBYkIR4jSoYs_tDAcTQ_HyjXaN_Rrn',
       'https://drive.google.com/uc?id=13QxX7GSPsmKSVYTBnc9JPew7HjEcJcZ5'
-  ]},
+    ]
+  },
   {
     year: 2018,
     date: new Date('August 2018'),
@@ -25,5 +26,6 @@ export const LETTERS = [
     view: [
       'https://drive.google.com/uc?id=1PiZY3FkBabUcp0sTRV2VRWEJ_EEpOeqn',
       'https://drive.google.com/uc?id=12_PVgN7LXugSonGEIxiyrJhGv9Bdp5G0'
-  ]}
+    ]
+  }
 ];

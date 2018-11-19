@@ -43,7 +43,11 @@
   background-color: green;
 }
 
-.nav .selected {
+.nav .active {
   color:white;
   background-color: green;
+}
+
+.hide {
+  display: none;
 }
