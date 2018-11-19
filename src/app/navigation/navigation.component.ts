@@ -1,11 +1,11 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Location } from "@angular/common";
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from "@angular/router";
 
 const LINKS: any = [
-  { name: "Prayer Requests", view: '/prayerrequests', selected: false },
-  { name: "Office", view: "/office", selected: false},
-  { name: "Field Ministry", view: '/fieldministry', selected: false },
-  { name: "Prayer Letters", view: '/prayerletters', selected: false },
+  { name: "Prayer Requests", view: '/prayerrequests' },
+  { name: "Office", view: "/office" },
+  { name: "Field Ministry", view: '/fieldministry' },
+  { name: "Prayer Letters", view: '/prayerletters' },
 ]
 
 @Component({
@@ -17,35 +17,15 @@ const LINKS: any = [
 
 export class NavigationComponent implements OnInit {
   private links: any;
-  private view: any;
 
   constructor(
-    private location: Location
+    private route: ActivatedRoute
   ) {
-
     this.links = LINKS;
-
    }
 
   ngOnInit() {
-    this.view="/home";
-    this.location.go(this.location.path());
-    this.changeSelected(this.location.path());
-  }
-
-  changeSelected(view: string): void {
-    for(let link of this.links) {
-      if( link.view == view ) {
-        link.selected = true;
-        view = link.name;
-      } else {
-        link.selected = false;
-      }
-    }
-    if(view == ""){
-      view = "/home";
-    }
-    this.view = view;
+    // this.title = this.route.data.title;
   }
 
 

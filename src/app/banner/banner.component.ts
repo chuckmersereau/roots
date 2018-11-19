@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'banner',
@@ -6,8 +7,13 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./banner.component.scss']
 })
 export class BannerComponent implements OnInit {
-  @Input() view: any;
-  constructor() { }
+  title: any;
+  constructor(
+    private route: ActivatedRoute
+  ) {
+    console.log(this.route);
+    this.title = this.route.data.title;
+  }
 
   ngOnInit() {
   }

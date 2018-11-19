@@ -1,16 +1,15 @@
 <div class="navbar">
   <div *ngIf="view != '/home'" class="nav-home">
-    <a routerLink="/home" (click)="changeSelected(link.view)">
+    <a routerLink="/home" routerLinkActive="hide">
       <img src="assets/roots-holder.png">
     </a>
   </div>
   <div class="nav">
     <a *ngFor="let link of links"
       routerLink={{link.view}}
-      [class.selected]="link.selected"
-      (click)="changeSelected(link.view)">
+      routerLinkActive="active">
       {{link.name}}
     </a>
   </div>
 </div>
-<banner [view]="view"></banner>
+<banner></banner>
