@@ -1,6 +1,8 @@
 <div class="welcome">
+  <p *ngFor="let paragraph of welcome">
+    {{paragraph}}
+  </p>
+  <div class="img">
     <img src="assets/HQ_mall.jpeg">
-      <p *ngFor="let paragraph of welcome">
-        {{paragraph}}
-      </p>
+  </div>
 </div>
