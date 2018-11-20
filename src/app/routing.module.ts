@@ -67,7 +67,7 @@ const routes: Routes = [
   {
     path: '**',
     redirectTo: '/home',
-    pathMathc: 'full'
+    pathMatch: 'full'
   }
 ];
 
