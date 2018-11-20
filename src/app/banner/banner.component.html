@@ -1,13 +1,13 @@
 <div class="banner">
-  <div *ngIf="view == '/home'"class="logo">
+  <div *ngIf="title == 'Roots'" class="logo">
     <div class="img">
       <img src="assets/roots-holder.png">
     </div>
     <h1>
-      Roots
+      {{title}}
     </h1>
   </div>
-  <div *ngIf="view != '/home'" class="view-title">
+  <div *ngIf="title != 'Roots'" class="view-title">
     <h1>
       {{title}}
     </h1>

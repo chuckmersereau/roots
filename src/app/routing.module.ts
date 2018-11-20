@@ -18,11 +18,17 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        component: RequestsComponent
+        component: RequestsComponent,
+        data: {
+          title: "Prayer Requests"
+        }
       },
       {
         path: 'submit',
-        component: SubmitComponent
+        component: SubmitComponent,
+        data: {
+          title: "Prayer Requests"
+        }
       }
     ]
   },
@@ -47,13 +53,21 @@ const routes: Routes = [
     },
   },
   {
+    path: 'home',
+    component: HomeComponent,
+    data: {
+      title: "Roots"
+    }
+  },
+  {
     path: '',
     redirectTo: '/home',
     pathMatch: 'full'
   },
   {
-    path: 'home',
-    component: HomeComponent,
+    path: '**',
+    redirectTo: '/home',
+    pathMathc: 'full'
   }
 ];
 
