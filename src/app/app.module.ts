@@ -10,6 +10,7 @@ import { PrayerLettersComponent } from './prayer-letters/prayer-letters.componen
 import { OfficeComponent } from './office/office.component';
 import { PrayerRequestsModule } from './prayer-requests/prayer-requests.module';
 import { BannerComponent } from './banner/banner.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { BannerComponent } from './banner/banner.component';
     FieldMinistryComponent,
     PrayerLettersComponent,
     OfficeComponent,
-    BannerComponent
+    BannerComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,7 @@ const LINKS: any = [
   { name: "Office", view: "/office" },
   { name: "Field Ministry", view: '/fieldministry' },
   { name: "Prayer Letters", view: '/prayerletters' },
+  { name: "About", view: '/about' }
 ]
 
 @Component({
