@@ -1,4 +1,9 @@
-
+<div class="verses">
+  <div *ngFor="let verse of verses">
+    <h2>{{verse.reference}}</h2>
+    <p>{{verse.text}}</p>
+  </div>
+</div>
 <div class="submit">
   <div class="nav">
     <a routerLink="..">Back to Requests

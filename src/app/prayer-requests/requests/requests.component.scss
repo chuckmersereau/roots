@@ -1,10 +1,13 @@
 .verses {
   display: flex;
-  padding: 2em;
+  padding: 3em;
 }
 .verses div {
-  padding: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1em;
   width: 50%;
+  text-align: center;
 }
 
 .verses {
@@ -37,6 +40,7 @@
 
 .request-list {
   padding: 1em 0;
+  // width: 50%
 }
 
 .request {

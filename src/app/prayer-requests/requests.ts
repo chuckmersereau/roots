@@ -16,7 +16,7 @@ export const PRAYER_REQUESTS = [
     anonymous: true,
     date: '11/19/18',
     request: 'Pray for me.'
-  }
+  },
   {
     name: 'Charles Mersereau',
     school: 'Michigan State University',

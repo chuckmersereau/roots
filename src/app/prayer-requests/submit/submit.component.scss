@@ -1,3 +1,27 @@
+.verses {
+  display: flex;
+  padding: 3em;
+}
+.verses div {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1em;
+  width: 50%;
+  text-align: center;
+}
+
+.verses {
+  font-style: italic;
+}
+
+.verses h2 {
+  font-weight: normal;
+}
+
+.verses p {
+  font-weight: lighter;
+}
+
 .nav {
   width: 640px;
   height: 1em;
