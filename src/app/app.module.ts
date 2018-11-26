@@ -18,10 +18,10 @@ import { AboutComponent } from './about/about.component';
     HomeComponent,
     NavigationComponent,
     FieldMinistryComponent,
-    PrayerLettersComponent,
     OfficeComponent,
     BannerComponent,
-    AboutComponent
+    AboutComponent,
+    PrayerLettersComponent
   ],
   imports: [
     BrowserModule,

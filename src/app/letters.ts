@@ -1,5 +1,6 @@
 export const LETTERS = [
   {
+    id: 3,
     year: 2018,
     date: new Date('October 2018'),
     selected: false,
@@ -9,8 +10,9 @@ export const LETTERS = [
     ]
   },
   {
-    year: 2019,
-    date: new Date('September 2019'),
+    id: 2,
+    year: 2018,
+    date: new Date('September 2018'),
     selected: false,
     link:"https://drive.google.com/open?id=1zhWn652yC78Cy-aEqAXfcyIEDlKYyrWe",
     view: [
@@ -19,6 +21,7 @@ export const LETTERS = [
     ]
   },
   {
+    id: 1,
     year: 2018,
     date: new Date('August 2018'),
     selected: false,

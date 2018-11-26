@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LETTERS } from '../letters';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-prayer-letters',
@@ -9,40 +10,36 @@ import { LETTERS } from '../letters';
 export class PrayerLettersComponent implements OnInit {
   letters: any;
   letter: any;
-  listYears: any;
   years: any;
-  constructor() {
+  show: boolean=false;
+  constructor(
+    private router: Router,
+    private route: ActivatedRoute
+  ) {
     this.years = [];
     this.letters = LETTERS;
-    console.log(this.years);
-
     this.letters.sort(function(a, b) {
       return b.date - a.date;
     });
-
     this.getYears();
-    this.showLetter(this.letters[0]);
+    this.letter = this.letters[0];
    }
 
   ngOnInit() {
+    this.route.params.subscribe((params) => {
+      let letter = this.letters.find(function(letter) {
+        return letter.id == params.id;
+      });
+      if(letter) {
+        this.selectLetter(letter);
+      } else {
+        this.router.navigate(['prayerletters',this.letter.id]);
+      }
+    });
   }
 
-  showLetter(_letter: any) {
-    for(let letter of this.letters) {
-      if( letter.date == _letter.date) {
-        letter.selected = true;
-        this.letter=letter;
-      } else {
-        letter.selected = false;
-      }
-    }
-    for(let year of this.years){
-      if(year.year == _letter.year) {
-        year.selected = true;
-      } else {
-        year.selected = false;
-      }
-    }
+  showLetter(id: any) {
+    this.router.navigate(['prayerletters',id]);
   }
 
   getYears() {
@@ -57,7 +54,30 @@ export class PrayerLettersComponent implements OnInit {
     }
   }
 
-  showYear(_year: any) {
+  selectLetter(_letter: any){
+    for(let letter of this.letters) {
+      if( letter.id == _letter.id) {
+        letter.selected = true;
+        this.letter = letter;
+        this.show = true;
+        this.selectYear(letter);
+      } else {
+        letter.selected = false;
+      }
+    }
+  }
+
+  selectYear(_letter: any){
+    for(let year of this.years){
+      if(year.year == _letter.year) {
+        year.selected = true;
+      } else {
+        year.selected = false;
+      }
+    }
+  }
+
+  toggleYear(_year: any) {
     for(let year of this.years){
       if(year.year == _year.year) {
         year.show = !year.show;

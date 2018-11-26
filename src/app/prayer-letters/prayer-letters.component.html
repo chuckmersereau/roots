@@ -2,13 +2,13 @@
   <div class="letter-list">
     <ul>
       <li *ngFor="let year of years" class="year">
-        <div (click)="showYear(year)" class="year-year" [class.selected]="year.selected">
+        <div (click)="toggleYear(year)" class="year-year" [class.selected]="year.selected">
           {{year.year}}
           <i class="fas fa-angle-up" [ngClass]="{ 'fa-flip-vertical': year.show }"></i>
         </div>
         <div *ngFor="let letter of letters" class="months" [ngClass]="{'show' : year.show}">
           <li *ngIf="letter.year == year.year"
-              (click)="showLetter(letter)"
+              routerLink="/prayerletters/{{letter.id}}"
               [class.selected]="letter.selected">
             {{ letter.date | date: 'MMMM' }}
           </li>
@@ -17,8 +17,10 @@
     </ul>
   </div>
   <div class="letter">
-    <a href={{letter.link}}>
-      <img *ngFor="let img of letter.view" src={{img}}>
-    </a>
+    <div *ngIf="show">
+      <a href={{letter.link}}>
+        <img *ngFor="let img of letter.view" src={{img}}>
+      </a>
+    </div>
   </div>
 </div>
