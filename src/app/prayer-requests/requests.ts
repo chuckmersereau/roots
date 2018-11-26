@@ -10,12 +10,20 @@
 
 export const PRAYER_REQUESTS = [
   {
+    name: 'JD Lesada',
+    school: "University of Michigan",
+    state: "Florida",
+    anonymous: true,
+    date: '11/19/18',
+    request: 'Pray for me.'
+  }
+  {
     name: 'Charles Mersereau',
     school: 'Michigan State University',
     state: 'Michigan',
     anonymous: true,
     date: '11/12/18',
-    request: 'Wisdom to treat and health for back issues.'
+    request: 'Health for back issues.'
   },
   {
     name: 'Chuck Mersereau',
