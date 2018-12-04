@@ -1,4 +1,26 @@
+// model:
+// {
+//   id: num,
+//   year: num,
+//   date: new Date('string'),
+//   selected: false,
+//   link: 'string',
+//   view: [
+//     'string'
+//   ]
+// }
+
 export const LETTERS = [
+  {
+    id: 4,
+    year: 2018,
+    date: new Date('November 2018'),
+    selected: false,
+    link: 'https://drive.google.com/open?id=17CdITzfc8kgNBeapCI08RHzIspjVzKou',
+    view: [
+      'https://drive.google.com/uc?id=1N6sbv1qcHP4an3bBhiEYN7Hdp4lnodAK'
+    ]
+  },
   {
     id: 3,
     year: 2018,
